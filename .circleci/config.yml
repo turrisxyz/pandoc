@@ -5,6 +5,7 @@ jobs:
       xcode: 11.1.0
     environment:
       HOMEBREW_NO_AUTO_UPDATE: 1
+      CURL_SSL_BACKEND: secure-transport
     steps:
     - checkout
     - restore_cache:
