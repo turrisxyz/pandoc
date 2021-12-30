@@ -94,8 +94,9 @@ jobs:
 
     - name: Build executable
       run: |
-          stack update
-          stack install
+          stack --no-terminal setup
+          stack --no-terminal update
+          stack --no-terminal install
 
     - name: Create artifacts
       run: |
